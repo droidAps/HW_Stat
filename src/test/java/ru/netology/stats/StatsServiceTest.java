@@ -36,25 +36,25 @@ class StatsServiceTest {
     @Test
     void findMonthsWithMaximumSales() {
         // подготавливаем данные:
-        int[] expected = {6, 8};
+        int expected = 8;
 
         // вызываем целевой метод:
-        int[] actual = service.findMonthsWithMaximumSales(sales);
+        int actual = service.findMonthsWithMaximumSales(sales);
 
         // производим проверку (сравниваем ожидаемый и фактический):
-        assertArrayEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
     void findMonthsWithMinimumSales() {
         // подготавливаем данные:
-        int[] expected = {9};
+        int expected = 9;
 
         // вызываем целевой метод:
-        int[] actual = service.findMonthsWithMinimumSales(sales);
+        int actual = service.findMonthsWithMinimumSales(sales);
 
         // производим проверку (сравниваем ожидаемый и фактический):
-        assertArrayEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
